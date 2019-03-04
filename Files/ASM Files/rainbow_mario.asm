@@ -1,3 +1,15 @@
+; [This section is to support sa-1]
+lorom
+!bank = $800000
+!addr = $0000
+
+if read1($00ffd5) == $23
+	sa1rom
+	!bank = $000000
+	!addr = $6000
+endif
+;[end]
+
 ORG $F6F6 ; Origin/Original address in ScrollingRoutine, DOESN'T get called outside of levels.
 autoclean JSL rainbow
 NOP ; One leftover byte, do nothing

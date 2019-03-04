@@ -1,5 +1,17 @@
 ; Hold down L (Left Bumper/Trigger/Shoulder) and press UP or DOWN to toggle through powerstates.
 
+; [This section is to support sa-1]
+lorom
+!bank = $800000
+!addr = $0000
+
+if read1($00ffd5) == $23
+	sa1rom
+	!bank = $000000
+	!addr = $6000
+endif
+;[end]
+
 ORG $8650 ; Origin/Original address in ControllerUpdate routine
 autoclean JSL playerstate
 NOP ; Left over byte, lets get rid of it
