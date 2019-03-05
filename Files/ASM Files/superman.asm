@@ -1,18 +1,6 @@
 ; This is really buggy, and made just for the heck of it.
 ; Have fun.
 
-; [This section is to support sa-1]
-lorom
-!bank = $800000
-!addr = $0000
-
-if read1($00ffd5) == $23
-	sa1rom
-	!bank = $000000
-	!addr = $6000
-endif
-;[end]
-
 ORG $8665 ; Origin/Original address in ControllerUpdate routine
 autoclean JSL superman
 NOP ; Two left over bytes, lets get rid of it

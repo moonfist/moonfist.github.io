@@ -1,16 +1,4 @@
-; Hold down L (Left Bumper/Trigger/Shoulder) and press UP or DOWN to toggle through powerstates.
-
-; [This section is to support sa-1]
-lorom
-!bank = $800000
-!addr = $0000
-
-if read1($00ffd5) == $23
-	sa1rom
-	!bank = $000000
-	!addr = $6000
-endif
-;[end]
+; Hold down Select and press UP or DOWN to toggle through powerstates.
 
 ORG $8650 ; Origin/Original address in ControllerUpdate routine
 autoclean JSL playerstate
@@ -19,8 +7,8 @@ NOP ; Left over byte, lets get rid of it
 freecode ; Use free space in the RAM for the hijack
 
 playerstate: ; Classified on line 2
-LDA $17 ; Controller input for buttons being held down
-AND #%00100000 ; The L Button (Left Trigger/Shoulder)
+LDA $15 ; Controller input for buttons being held down
+AND #%00100000 ; The Select Button
 BEQ defnotpressed ; If the button is anything else jump to notpressed
 LDA $16 ; Controller input for buttons being pressed
 AND #%00001000 ; The Up Button
