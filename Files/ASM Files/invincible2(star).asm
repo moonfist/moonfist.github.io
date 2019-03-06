@@ -1,3 +1,5 @@
+; NOT COMPATIBLE WITH: rainbow_mario.asm
+
 ORG $F6F6 ; Scrolling Routine
 autoclean JSL starpower
 NOP ; Left over byte, lets get rid of it

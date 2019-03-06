@@ -1,3 +1,5 @@
+; NOT COMPATABILE WITH: select+bgivestarpower.asm
+
 ; Hold down Select and press UP or DOWN to toggle through powerstates.
 
 ORG $8650 ; Origin/Original address in ControllerUpdate routine

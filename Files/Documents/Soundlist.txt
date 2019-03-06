@@ -1,0 +1,55 @@
+$7E:1DFC
+00 - Nothing
+01 - Coin
+02 - Hit a ? Block
+03 - Hit a ? Block with a vine inside
+04 - Spin jump
+05 - 1up
+06 - Shoot fireball
+07 - Shatter block/Monty Mole popping from the ground
+08 - Springboard
+09 - Bullet bill shoot
+0A - Egg hatch
+0B - Item placed in reserve box
+0C - Item falls from the reserve box
+0D - Same as 0C
+0E - L/R scroll
+0F - Door
+10 - Same as 09
+11 - Drumroll start
+12 - Drumroll end
+13 - Lose Yoshi
+14 - Unused? (In SMW2: Yoshi's Island it's the sound of a new level becoming available)
+15 - Overworld tile reveal
+16 - Overworld castle collapse
+17 - Fire spit (Used by Yoshi and the Bowser Statues)
+18 - Thunder
+19 - Clappin' Chuck clap/bubble snap
+1A - Castle destruction bomb
+1B - Castle destruction bomb fuse
+1C - Overworld switch palace block ejection
+1D - Running out of time (combine this with the one in 1DF9, does not speed up tempo)
+1E - Whistlin' Chuck whistle
+1F - Yoshi mount
+20 - Lemmy/Wendy lands in the lava
+21 - Yoshi's tongue
+22 - Message box/save prompt
+23 - Mario moves onto a level tile
+24 - P-switch running out
+25 - Yoshi stomps an enemy
+26 - Swooper
+27 - Podoboo
+28 - Enemy stunned/hurt (like Chargin' Chucks or the Koopalings)
+29 - Correct
+2A - Wrong
+2B - Firework whistle
+2C - Firework bang
+2D - Podoboo (-100% pan) <- sound only comes out of the left speaker
+2E - Podoboo (-71% pan)
+2F - Podoboo (-43% pan)
+30 - Podoboo (-14% pan)
+31 - Podoboo (14% pan)
+32 - Podoboo (43% pan)
+33 - Podoboo (71% pan)
+34 - Podoboo (100% pan) <- sound only comes out of the right speaker
+35+- Mirror of $1DF9's sound effects, starting at the hit head sound

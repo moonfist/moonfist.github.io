@@ -1,3 +1,5 @@
+; NOT COMPATABILE WITH: selectpowerupstate.asm
+
 ; Hold down Select and press B to get star power
 
 ORG $8650 ; Origin/Original address in ControllerUpdate routine

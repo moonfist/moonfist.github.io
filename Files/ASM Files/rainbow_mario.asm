@@ -1,3 +1,5 @@
+; NOT COMPATIBLE WITH: invincible2(star).asm
+
 ORG $F6F6 ; Origin/Original address in ScrollingRoutine, DOESN'T get called outside of levels.
 autoclean JSL rainbow
 NOP ; One leftover byte, do nothing
