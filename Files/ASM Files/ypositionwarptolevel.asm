@@ -1,7 +1,7 @@
 !YPos = #$19 ; Y-Position Value
 !Level = $00C5 ; Level #
 
-ORG $A2A1 ; Scrolling
+ORG $00A2A1 ; Scrolling
 autoclean JSL nextlevel ; Jump to line 9
 
 freecode ; Find freespace for our code
